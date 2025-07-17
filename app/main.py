@@ -1,14 +1,13 @@
 from fastapi import FastAPI
-from app.api import chat, stream_chat, upload, health, memory
+from app.api import  stream_chat, upload,  memory
 from app.logger import logger
 
 app = FastAPI(title="LangChain Memory Chat API")
 
 # Include routers
-app.include_router(chat.router)
+
 app.include_router(stream_chat.router)
 app.include_router(upload.router)
-app.include_router(health.router)
 app.include_router(memory.router)
 
 @app.get("/")
