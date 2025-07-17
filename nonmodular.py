@@ -32,7 +32,7 @@ PGUSER = os.getenv("PGUSER", "postgres")
 PGPASSWORD = os.getenv("PGPASSWORD", "")
 PGHOST = os.getenv("PGHOST", "127.0.0.1")
 PGPORT = os.getenv("PGPORT", "5432")
-PGDATABASE = os.getenv("PGDATABASE", "streamlangchain")
+PGDATABASE = os.getenv("PGDATABASE", "chunkslangchain")
 
 DATABASE_URL = f"postgresql://{PGUSER}:{PGPASSWORD}@{PGHOST}:{PGPORT}/{PGDATABASE}"
 print("DATABASE_URL:", DATABASE_URL)
